@@ -57,6 +57,8 @@ public class Timer extends Activity implements OnClickListener{
 			onStore();
 			break;
 		case R.id.header_text_right:
+			Intent i = new Intent(this, TimeList.class);
+			startActivity(i);
 			break;
 		}
 	}
@@ -75,15 +77,23 @@ public class Timer extends Activity implements OnClickListener{
 	};
 	
 	
-//	DateFormat mFormat = new DateFormat();
 	private void updateTimeInUi(){
 		mTimeView.setText(DateFormat.format("mm:ss", mCurrentTimeSeconds * 1000));
 	}
 	
 	private void updateRecordsInUi(){
-		String best = DateFormat.format("mm:ss",Storage.instance(this).getBestTime() * 1000).toString();
-		String worst = DateFormat.format("mm:ss",Storage.instance(this).getWorstTime() * 1000).toString();
-		mRecordsView.setText(best +"/" + worst);
+		StringBuilder records = new StringBuilder();
+		int time = Storage.instance(this).getBestTime();
+		if (time != Integer.MAX_VALUE)
+			records.append(DateFormat.format("mm:ss",time * 1000));
+
+		time = Storage.instance(this).getWorstTime();
+		if (time != Integer.MIN_VALUE){
+			if (records.length() > 0) records.append("/");
+			records.append(DateFormat.format("mm:ss",time * 1000));
+		}
+		
+		mRecordsView.setText(records.toString());
 	}
 	
 	private void onStartGoing(){
@@ -102,8 +112,10 @@ public class Timer extends Activity implements OnClickListener{
 	private void onStore(){
 		if (mCurrentTimeSeconds == 0)
 			return;
+		boolean isRecordsCanged = Storage.instance(this).storeTime(mCurrentTimeSeconds);
+		if (isRecordsCanged)
+			updateRecordsInUi();
 		mCurrentTimeSeconds = 0;
 		updateTimeInUi();
-		Storage.instance(this).storeTime(mCurrentTimeSeconds);
 	}
 }

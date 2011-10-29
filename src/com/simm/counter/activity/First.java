@@ -24,10 +24,7 @@ public class First extends Activity implements OnClickListener{
         
         mHistory = (Button) findViewById(R.id.first_button_history);
         mHistory.setOnClickListener(this);
-        
-		Intent i = new Intent(this, Timer.class);
-		startActivity(i);
-       
+               
     }
 
 	@Override

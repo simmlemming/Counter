@@ -17,6 +17,6 @@
         </activity>
         <activity android:name="com.simm.counter.activity.Count" android:screenOrientation="landscape"/>
         <activity android:name="com.simm.counter.activity.Timer" android:screenOrientation="landscape"/>
-
+		<activity android:name="com.simm.counter.activity.TimeList" android:screenOrientation="landscape"/>
     </application>
 </manifest>

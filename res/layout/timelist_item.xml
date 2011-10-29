@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:orientation="horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:paddingRight="5dip"
+         android:paddingLeft="5dip"
+         android:paddingTop="10dip"
+         android:paddingBottom="10dip"
+>
+	<TextView android:id="@+id/timelist_item_time"
+		style="@style/text"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="left|center_vertical" 
+		android:text="05:36"
+		android:textColor="@color/first"
+		android:layout_weight="1"
+	/>
+	
+	<TextView android:id="@+id/timelist_item_date"
+		style="@style/text"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:gravity="right|center_vertical" 
+		android:text="10/10/2011"
+		android:textColor="@color/first"
+		
+	/>
+	
+
+</LinearLayout>
