@@ -10,8 +10,8 @@ public class Statistics {
 	
 	private int mFails, mSuccesses;
 	
-	public int success() { return mSuccesses++; }
-	public int fail() { return mFails++; }
+	public int success() { return ++mSuccesses; }
+	public int fail() { return ++mFails; }
 	public int getFails() { return mFails; }
 	public int getSuccesses() { return mSuccesses; }
 	

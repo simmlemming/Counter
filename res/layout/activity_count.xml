@@ -17,9 +17,8 @@
     >
     
 	    <Button android:id="@+id/count_button_success"
-	    	style="@style/button.first" 
+	    	style="@style/button" 
 	    	android:layout_width="fill_parent"
-	    	android:layout_height="80dip"
 	    	android:layout_weight="1"
 	    	android:layout_margin="20dip"
 			android:text="0"
@@ -27,9 +26,8 @@
 	    
 	    
 	    <Button android:id="@+id/count_button_fail" 
-	    	style="@style/button.first" 
+	    	style="@style/button" 
 	    	android:layout_width="fill_parent"
-	    	android:layout_height="80dip"
 	    	android:layout_weight="1"
 	    	android:layout_margin="20dip"
 			android:text="0"

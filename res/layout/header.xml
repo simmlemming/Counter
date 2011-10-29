@@ -12,7 +12,7 @@
 	    android:layout_centerInParent="true"
 	    />
 	
-	<TextView  android:id="@+id/header_persents"
+	<TextView  android:id="@+id/header_text_right"
 		style="@style/text"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class First extends Activity implements OnClickListener{
     
-	private Button mCount;
+	private Button mCount, mHistory;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -20,8 +20,14 @@ public class First extends Activity implements OnClickListener{
         setContentView(R.layout.first);
         
         mCount = (Button) findViewById(R.id.first_button_count);
-        
         mCount.setOnClickListener(this);
+        
+        mHistory = (Button) findViewById(R.id.first_button_history);
+        mHistory.setOnClickListener(this);
+        
+		Intent i = new Intent(this, Timer.class);
+		startActivity(i);
+       
     }
 
 	@Override
@@ -29,6 +35,10 @@ public class First extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.first_button_count:
 			Intent i = new Intent(this, Count.class);
+			startActivity(i);
+			break;
+		case R.id.first_button_history:
+			i = new Intent(this, Timer.class);
 			startActivity(i);
 			break;
 

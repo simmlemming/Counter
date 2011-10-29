@@ -19,7 +19,7 @@ public class Count extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_count);
 		
-		mPersents = (TextView) findViewById(R.id.header_persents);
+		mPersents = (TextView) findViewById(R.id.header_text_right);
 		mSuccess = (Button) findViewById(R.id.count_button_success);
 		mFail = (Button) findViewById(R.id.count_button_fail);
 		

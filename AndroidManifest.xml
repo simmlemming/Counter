@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.simm.counter.activity.Count" />
+        <activity android:name="com.simm.counter.activity.Count" android:screenOrientation="landscape"/>
+        <activity android:name="com.simm.counter.activity.Timer" android:screenOrientation="landscape"/>
 
     </application>
 </manifest>

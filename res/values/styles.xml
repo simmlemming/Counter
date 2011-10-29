@@ -6,13 +6,15 @@
 			<item name="android:typeface">sans</item>
 	</style>
 	
-	<style name="button"></style>
-	<style name="button.first">
+	<style name="button">
 			<item name="android:textColor">@color/second</item>
 			<item name="android:textSize">35dip</item>
 			<item name="android:typeface">sans</item>
 			<item name="android:gravity">center</item>
 			<item name="android:background">@drawable/item</item>
+			<item name="android:layout_height">80dip</item>	
+			<item name="android:layout_width">120dip</item>
 	</style>
+	
 	
 </resources>
