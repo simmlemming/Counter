@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<style name="text">
+			<item name="android:textColor">@color/second</item>
+			<item name="android:textSize">20dip</item>
+			<item name="android:typeface">sans</item>
+	</style>
+	
+	<style name="button"></style>
+	<style name="button.first">
+			<item name="android:textColor">@color/second</item>
+			<item name="android:textSize">35dip</item>
+			<item name="android:typeface">sans</item>
+			<item name="android:gravity">center</item>
+			<item name="android:background">@drawable/item</item>
+	</style>
+	
+</resources>

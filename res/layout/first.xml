@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <include 
+    	android:layout_alignParentTop="true"
+    	layout="@layout/header"
+    />
+    
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:paddingTop="45dip"
+    >
+    
+	    <Button android:id="@+id/first_button_history"
+	    	style="@style/button.first" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="80dip"
+	    	android:layout_weight="1"
+	    	android:layout_margin="20dip"
+			android:text="History"
+	    />
+	    
+	    
+	    <Button android:id="@+id/first_button_count" 
+	    	style="@style/button.first" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="80dip"
+	    	android:layout_weight="1"
+	    	android:layout_margin="20dip"
+			android:text="Count"
+	    />
+    
+    </LinearLayout>
+</RelativeLayout>
